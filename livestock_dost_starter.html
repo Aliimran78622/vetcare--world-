@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pa-Arab" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#176b45">
+<title>Livestock Dost | لائیوسٹاک دوست</title>
+<style>
+:root{--green:#176b45;--green2:#e9f4ed;--ink:#183329;--muted:#60756b;--line:#dce8df;--bg:#f5f8f5;--white:#fff;--orange:#fff1d8;--red:#fff0ee}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Noto Naskh Arabic","Noto Sans Arabic",Arial,sans-serif;line-height:1.65}
+header{background:linear-gradient(135deg,#14583a,#21865a);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:23px;font-weight:800}.tag{font-size:13px;opacity:.9}.lang{border:1px solid #ffffff80;background:#ffffff18;color:white;border-radius:12px;padding:7px 10px}
+main{max-width:760px;margin:auto;padding:16px 14px 90px}.welcome{margin:8px 2px 16px}.welcome h1{font-size:21px;margin:0 0 3px}.welcome p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.tile{background:white;border:1px solid var(--line);border-radius:17px;padding:15px;text-align:right;min-height:112px;cursor:pointer;box-shadow:0 2px 8px #173b2910}.tile .emoji{font-size:25px}.tile b{display:block;font-size:16px;margin-top:5px}.tile small{color:var(--muted)}
+.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:15px;margin:13px 0}.panel h2{font-size:18px;margin:0 0 10px}.notice{background:var(--orange);border:1px solid #f1d9a9;border-radius:13px;padding:12px;font-size:13px;margin:13px 0}.danger{background:var(--red);border:1px solid #f1c9c4;border-radius:13px;padding:12px;font-size:13px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pill{border:1px solid var(--line);border-radius:999px;background:white;padding:7px 12px;font-size:13px;color:var(--ink);cursor:pointer}.pill.active{background:var(--green);border-color:var(--green);color:white}
+.item{border-bottom:1px solid var(--line);padding:12px 0}.item:last-child{border:0}.item h3{font-size:16px;margin:0 0 3px}.muted{color:var(--muted);font-size:13px}.btn{border:0;background:var(--green);color:white;border-radius:12px;padding:10px 14px;font:inherit;font-weight:700;cursor:pointer}.btn.secondary{background:var(--green2);color:var(--green)}input,select,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:11px;font:inherit;background:white;color:var(--ink);margin:5px 0 11px}label{font-size:14px;font-weight:650}textarea{min-height:80px}.hidden{display:none!important}.bottom{position:fixed;bottom:0;left:0;right:0;background:#fffffff2;backdrop-filter:blur(8px);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:5}.bottom button{border:0;background:none;color:var(--muted);font:inherit;font-size:12px;padding:4px;display:flex;flex-direction:column;align-items:center;gap:1px}.bottom button.active{color:var(--green);font-weight:800}.bottom span{font-size:19px}.screen{display:none}.screen.active{display:block}.back{background:none;border:0;color:var(--green);font:inherit;font-weight:700;padding:4px 0 12px;cursor:pointer}.badge{font-size:11px;background:var(--green2);color:var(--green);padding:3px 8px;border-radius:999px}.empty{text-align:center;color:var(--muted);padding:18px}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div><div class="brand">🐄 Livestock Dost</div><div class="tag">تہاڈے مویشیاں دا ڈیجیٹل ساتھی</div></div><button class="lang" id="langBtn">پنجابی</button></div>
+</header>
+<main>
+<section id="home" class="screen active">
+ <div class="welcome"><h1>السلام علیکم، کسان دوست!</h1><p>مویشیاں دی صحت، فارم دا ریکارڈ تے خرید و فروخت — ہک تھاں تے۔</p></div>
+ <div class="grid">
+  <button class="tile" data-go="diseases"><span class="emoji">🩺</span><b>بیماریاں تے رہنمائی</b><small>علامتاں، بچاؤ تے ڈاکٹر دی مدد</small></button>
+  <button class="tile" data-go="farm"><span class="emoji">📋</span><b>میرا فارم</b><small>جانوراں تے ویکسین دا ریکارڈ</small></button>
+  <button class="tile" data-go="market"><span class="emoji">🐃</span><b>مویشی منڈی</b><small>جانور ویکھو یا اشتہار لاؤ</small></button>
+  <button class="tile" data-go="vet"><span class="emoji">👨‍⚕️</span><b>ویٹرنری مدد</b><small>ڈاکٹر نال رابطے دی معلومات</small></button>
+ </div>
+ <div class="notice"><b>ضروری گل:</b> ایہ ایپ تعلیمی رہنمائی لئی اے، ڈاکٹر دا بدل نئیں۔ بیمار یا کمزور جانور لئی مستند ویٹرنری ڈاکٹر نال رابطہ کرو۔</div>
+ <div class="panel"><h2>آج دا کسان مشورہ</h2><p>نواں جانور ریوڑ وچ شامل کرن توں پہلاں کچھ عرصہ وکھ رکھو تے ڈاکٹر توں معائنہ کرواؤ۔</p><span class="badge">فارم دی صحت</span></div>
+</section>
+
+<section id="diseases" class="screen">
+ <button class="back" data-go="home">← واپس</button><h1>بیماریاں تے رہنمائی</h1>
+ <p class="muted">جانور دی قسم چنو۔ معلومات عام آگاہی لئی نیں؛ تشخیص ڈاکٹر کرے گا۔</p>
+ <div class="row" id="animalFilters">
+  <button class="pill active" data-animal="all">سارے</button><button class="pill" data-animal="cow">گاں / بھینس</button><button class="pill" data-animal="small">بکری / بھیڑ</button><button class="pill" data-animal="poultry">مرغیاں</button>
+ </div>
+ <div id="diseaseList" class="panel"></div>
+ <div id="diseaseDetail" class="panel hidden"></div>
+</section>
+
+<section id="farm" class="screen">
+ <button class="back" data-go="home">← واپس</button><h1>میرا فارم</h1>
+ <div class="panel"><h2>نواں جانور شامل کرو</h2>
+ <form id="animalForm">
+  <label>جانور دا ناں یا شناخت</label><input id="animalName" required placeholder="مثلاً بھوری بھینس">
+  <label>قسم</label><select id="animalType"><option>گاں</option><option>بھینس</option><option>بکری</option><option>بھیڑ</option><option>مرغی</option><option>اونٹ</option><option>ہور</option></select>
+  <label>عمر / تفصیل</label><input id="animalAge" placeholder="مثلاً 3 سال">
+  <label>ویکسین یا اگلی دیکھ بھال دی تاریخ</label><input id="animalDate" type="date">
+  <button class="btn" type="submit">ریکارڈ محفوظ کرو</button>
+ </form></div>
+ <div class="panel"><h2>میرے جانور</h2><div id="animalRecords" class="muted">ہن تک کوئی جانور شامل نئیں کیتا۔</div></div>
+ <p class="muted">ریکارڈ فی الحال صرف ایس فون دے براؤزر وچ محفوظ ہون گے۔</p>
+</section>
+
+<section id="market" class="screen">
+ <button class="back" data-go="home">← واپس</button><h1>مویشی منڈی</h1>
+ <div class="notice">ایہ نمونہ منڈی اے۔ تہاڈا اشتہار ہن صرف ایس فون تے نظر آوے گا؛ ہور خریداراں نوں وکھاؤن لئی بعد وچ آن لائن ڈیٹابیس ضروری ہووے گا۔</div>
+ <div class="panel"><h2>جانور دی فروخت دا اشتہار</h2>
+ <form id="marketForm">
+  <label>جانور دی قسم</label><select id="saleType"><option>گاں</option><option>بھینس</option><option>بکرا</option><option>بکری</option><option>بھیڑ</option><option>مرغیاں</option><option>اونٹ</option></select>
+  <label>نسل / تفصیل</label><input id="saleDesc" required placeholder="نسل، عمر، دودھ وغیرہ">
+  <label>قیمت (روپے)</label><input id="salePrice" type="number" min="1" required placeholder="مثلاً 250000">
+  <label>شہر / ضلع</label><input id="saleCity" required placeholder="مثلاً فیصل آباد">
+  <label>رابطہ نمبر</label><input id="salePhone" inputmode="tel" required placeholder="03XXXXXXXXX">
+  <button class="btn" type="submit">اشتہار شامل کرو</button>
+ </form></div>
+ <div class="panel"><h2>موجودہ اشتہار</h2><div id="marketRecords" class="muted">ہن تک کوئی اشتہار نئیں۔</div></div>
+</section>
+
+<section id="vet" class="screen">
+ <button class="back" data-go="home">← واپس</button><h1>ویٹرنری مدد</h1>
+ <div class="panel"><h2>ڈاکٹر کول جان توں پہلاں</h2><ul><li>جانور دی عمر تے قسم نوٹ کرو۔</li><li>علامتاں کدوں شروع ہوئیاں، ایہ لکھ لو۔</li><li>کھانا، پانی تے دودھ وچ تبدیلی نوٹ کرو۔</li><li>پہلاں دتی گئی دوا یا ویکسین دی تفصیل نال لے جاؤ۔</li></ul></div>
+ <div class="danger"><b>فوری مدد لو:</b> سانس وچ تکلیف، جانور دا ڈِگ پینا، شدید خون، پیٹ دا اچانک بہت پھلنا، دورے، یا کئی جانوراں دا اکٹھے بیمار ہونا۔</div>
+ <div class="panel"><h2>اپنے علاقے دا سرکاری ویٹرنری ہسپتال</h2><p>اپنے ضلع دے لائیوسٹاک دفتر یا سرکاری ویٹرنری ہسپتال نال رابطہ کرو۔ تصدیق توں بغیر کسی نمبر یا ڈاکٹر نوں ایپ وچ شامل نہ کرو۔</p></div>
+</section>
+</main>
+<nav class="bottom">
+ <button class="active" data-go="home"><span>🏠</span>گھر</button>
+ <button data-go="diseases"><span>🩺</span>بیماریاں</button>
+ <button data-go="farm"><span>📋</span>میرا فارم</button>
+ <button data-go="market"><span>🐃</span>منڈی</button>
+ <button data-go="vet"><span>👨‍⚕️</span>ڈاکٹر</button>
+</nav>
+<script>
+const diseaseData=[
+ {id:"fmd",animals:["cow"],name:"منہ کھُر دی بیماری (FMD)",en:"Foot-and-mouth disease",signs:"بخار، منہ وچ چھالے، رال، کھُراں وچ زخم یا لنگڑاہٹ۔",action:"بیمار جانور نوں فوراً ریوڑ توں وکھ کرو، آمدورفت محدود کرو تے ویٹرنری ڈاکٹر نوں فوری بلاؤ۔",prevention:"ڈاکٹر دے مشورے نال ویکسین، صفائی، نئے جانور دی علیحدگی۔"},
+ {id:"mastitis",animals:["cow"],name:"تھن دی سوزش (Mastitis)",en:"Mastitis",signs:"تھن گرم یا سوجیا ہویا، دودھ وچ پھٹکیاں/رنگ دی تبدیلی، دودھ گھٹنا یا بخار۔",action:"دودھ دی جانچ تے ویٹرنری معائنہ کرواؤ۔ اپنی مرضی نال اینٹی بایوٹک نہ دیو۔",prevention:"دودھ کڈھن توں پہلاں تے بعد صفائی، صاف بستر، دودھ کڈھن دا درست طریقہ۔"},
+ {id:"hs",animals:["cow"],name:"گل گھوٹو (HS)",en:"Haemorrhagic septicaemia",signs:"تیز بخار، گلے یا گردن دی سوجن، سانس دی تکلیف، اچانک کمزوری۔",action:"ایمرجنسی اے؛ فوراً ویٹرنری ڈاکٹر نوں بلاؤ۔ جانور نوں نہ ہلاؤ جے سانس متاثر اے۔",prevention:"علاقائی خطرے تے موسم دے حساب نال ڈاکٹر دی ہدایت مطابق ویکسین۔"},
+ {id:"lsd",animals:["cow"],name:"لمپی سکن بیماری (LSD)",en:"Lumpy skin disease",signs:"بخار، جلد تے گول گانٹھاں، لمف نوڈ دی سوجن، دودھ گھٹنا۔",action:"جانور وکھ کرو، مکھی/مچھر کنٹرول کرو تے ڈاکٹر توں تشخیص کرواؤ۔",prevention:"ویکٹر کنٹرول، صفائی، ڈاکٹر دی ہدایت مطابق ویکسین۔"},
+ {id:"ppr",animals:["small"],name:"پی پی آر (PPR)",en:"Peste des petits ruminants",signs:"بخار، ناک/اکھاں توں رطوبت، منہ دے زخم، دست تے سانس دی تکلیف۔",action:"بیمار بکریاں/بھیڑاں وکھ کرو تے فوری ویٹرنری مدد لو۔",prevention:"ویکسینیشن، نئے جانور دی علیحدگی، ریوڑ دی نگرانی۔"},
+ {id:"enter",animals:["small"],name:"اینٹروٹوکسیمیا",en:"Enterotoxaemia",signs:"اچانک کمزوری، پیٹ درد، دست یا اچانک موت؛ علامات مختلف ہو سکدیاں نیں۔",action:"فوری ڈاکٹر نال رابطہ کرو؛ صرف علامات توں پکی تشخیص ممکن نئیں۔",prevention:"متوازن خوراک تے ڈاکٹر دی ہدایت مطابق ویکسین۔"},
+ {id:"parasite",animals:["cow","small"],name:"پیٹ دے کیڑے / اندرونی طفیلیے",en:"Internal parasites",signs:"وزن گھٹنا، کمزوری، دست، بال/روئیں خراب ہونا یا جبڑے تھلے سوجن۔",action:"گوبر ٹیسٹ تے ڈاکٹر دے مشورے نال علاج؛ دوا دی مقدار وزن تے دوا مطابق ہوندی اے۔",prevention:"صاف پانی، چراگاہ دا انتظام، گوبر دی صفائی تے مناسب نگرانی۔"},
+ {id:"poultry",animals:["poultry"],name:"مرغیاں وچ سانس دی بیماری",en:"Respiratory disease",signs:"چھینکاں، کھانسی، ناک توں رطوبت، سانس دی آواز یا انڈے گھٹنا۔",action:"متاثرہ پرندے وکھ کرو، ہوا داری بہتر کرو تے پولٹری ویٹرنری ڈاکٹر نوں بلاؤ۔",prevention:"حیاتیاتی تحفظ، صفائی، ویکسین پروگرام ڈاکٹر دی ہدایت مطابق۔"}
+];
+let animalFilter="all";
+const $=id=>document.getElementById(id);
+function go(id){document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active",s.id===id));document.querySelectorAll(".bottom button").forEach(b=>b.classList.toggle("active",b.dataset.go===id));window.scrollTo(0,0)}
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+function renderDiseases(){const list=$("diseaseList");$("diseaseDetail").classList.add("hidden");const items=diseaseData.filter(d=>animalFilter==="all"||d.animals.includes(animalFilter));list.innerHTML=items.map(d=>`<div class="item"><h3>${d.name}</h3><div class="muted">${d.en}</div><button class="pill" style="margin-top:8px" onclick="showDisease('${d.id}')">تفصیل ویکھو</button></div>`).join("")}
+function showDisease(id){const d=diseaseData.find(x=>x.id===id);const el=$("diseaseDetail");el.classList.remove("hidden");el.innerHTML=`<h2>${d.name}</h2><p class="muted">${d.en}</p><b>ممکنہ نشانیاں</b><p>${d.signs}</p><b>ہن کی کرو؟</b><p>${d.action}</p><b>بچاؤ</b><p>${d.prevention}</p><div class="danger">ایہ معلومات تشخیص یا نسخہ نئیں۔ جانور دی حالت خراب ہووے تاں فوراً مستند ویٹرنری ڈاکٹر نال رابطہ کرو۔</div>`;el.scrollIntoView({behavior:"smooth",block:"start"})}
+document.querySelectorAll("[data-animal]").forEach(b=>b.addEventListener("click",()=>{animalFilter=b.dataset.animal;document.querySelectorAll("[data-animal]").forEach(x=>x.classList.toggle("active",x===b));renderDiseases()}));
+const load=(k)=>{try{return JSON.parse(localStorage.getItem(k)||"[]")}catch(e){return[]}},save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+function renderAnimals(){const a=load("ld_animals");$("animalRecords").innerHTML=a.length?a.map((x,i)=>`<div class="item"><b>${x.name}</b> <span class="badge">${x.type}</span><div class="muted">${x.age||"عمر درج نئیں"} ${x.date?" • تاریخ: "+x.date:""}</div><button class="pill" onclick="removeAnimal(${i})">مٹاؤ</button></div>`).join(""):"ہن تک کوئی جانور شامل نئیں کیتا۔"}
+window.removeAnimal=i=>{const a=load("ld_animals");a.splice(i,1);save("ld_animals",a);renderAnimals()};
+$("animalForm").addEventListener("submit",e=>{e.preventDefault();const a=load("ld_animals");a.push({name:$("animalName").value,type:$("animalType").value,age:$("animalAge").value,date:$("animalDate").value});save("ld_animals",a);e.target.reset();renderAnimals();alert("ریکارڈ محفوظ ہو گیا۔")});
+function renderMarket(){const a=load("ld_market");$("marketRecords").innerHTML=a.length?a.map((x,i)=>`<div class="item"><h3>${x.type} — ${Number(x.price).toLocaleString("en-PK")} روپے</h3><div>${x.desc}</div><div class="muted">${x.city} • رابطہ: ${x.phone}</div><button class="pill" onclick="removeListing(${i})">اشتہار مٹاؤ</button></div>`).join(""):"ہن تک کوئی اشتہار نئیں۔"}
+window.removeListing=i=>{const a=load("ld_market");a.splice(i,1);save("ld_market",a);renderMarket()};
+$("marketForm").addEventListener("submit",e=>{e.preventDefault();const a=load("ld_market");a.push({type:$("saleType").value,desc:$("saleDesc").value,price:$("salePrice").value,city:$("saleCity").value,phone:$("salePhone").value});save("ld_market",a);e.target.reset();renderMarket();alert("اشتہار ایس فون تے محفوظ ہو گیا۔ آن لائن شائع نئیں ہویا۔")});
+$("langBtn").addEventListener("click",()=>alert("پہلا ورژن پنجابی (شاہ مکھی) وچ اے۔ اردو تے انگریزی اگلے ورژن وچ شامل کیتیاں جا سکدیاں نیں۔"));
+renderDiseases();renderAnimals();renderMarket();
+</script>
+</body></html>
